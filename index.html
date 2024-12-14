@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashed.</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* .header {
+            background-color: #212722;
+        } */
+
+        .lg-li-color li {
+            color: hsla(127, 8%, 55%, 1);
+        }
+
+        .lg-li-color li:hover {
+            color: white;
+        }
+
+        .lets-btn {
+            background-color: #ea8f10;
+            padding: 1.6rem 3.6rem;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .bg-btn-lets {}
+
+        .img {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .bgc::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #3f2705;
+            position: absolute;
+            bottom: 10px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc2::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #9c5f09;
+            position: absolute;
+            bottom: 25px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc3::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #895104;
+            position: absolute;
+            bottom: 40px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc4::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #5e3a07;
+            bottom: 55px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc5::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #603b07;
+            bottom: 70px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .rashed {
+
+            position: relative;
+        }
+
+
+        .rashed::before {
+            content: "";
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #e48b0e;
+            bottom: 12px;
+            left: -51%;
+
+        }
+
+
+
+        .title {
+            position: relative;
+        }
+
+        .a {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            font-size: 20px;
+        }
+
+        .ah1 {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            font-size: 20px;
+        }
+
+        .typing-container {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #333;
+            width: 22ch;
+            /* Adjust width based on text length */
+            animation: typing 4s steps(22) infinite, blink 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 22ch;
+                /* Adjust to match text width */
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body class=" ">
+
+    <div class="bg-[#212722]">
+        <div class="max-w-[1200px] mx-auto pb-10">
+            <section class="header pb-10">
+                <div class="navbar w-[90%] mx-auto  flex justify-between">
+                    <div class="w-full">
+
+                        <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
+                            <div class="dropdown flex justify-end">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./service.html">Services</a></li>
+                                    <li><a href="./error.html">Journal</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <div
+                                        class="  lg:hidden w-[90%] hover:bg-[#fcaa37]  bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
+                                        <a class="" href="./contact.html">Let's Work Together</a>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 lg-li-color">
+                                <li><a href="./index.html">Home</a> </li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./service.html">Services</a></li>
+                                <li><a href="./error.html">Journal</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="navbar-end hidden lg:flex">
+                        <a href="./contact.html" class="lets-btn bg-[] hover:bg-[#fcaa37]">Let's Work Together</a>
+                    </div>
+                </div>
+                <section class="banner w-[90%] mx-auto pt-20 pb-5">
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <div class="text text-white basis-[60%]">
+                            <div class="">
+                                <h3 class="text-xl rashed">
+                                    <div class="typing-container">
+                                        I am Rashed Ahommod
+                                    </div>
+                                </h3>
+                                <span class="rashed-bg"></span>
+
+                            </div>
+                            <h1 class="text-5xl font-bold py-9">a front-end developer <br> creating user-friendly and
+                                responsive
+                                websites
+                            </h1>
+                        </div>
+                        <div class="img basis-[30%] flex justify-end">
+                            <span class="bgc5 sm:hidden lg:block"></span>
+                            <span class="bgc4 sm:hidden lg:block"></span>
+                            <span class="bgc3 sm:hidden lg:block"></span>
+                            <span class="bgc2 sm:hidden lg:block"></span>
+                            <span class="bgc sm:hidden lg:block"></span>
+                            <img src="./image/banner.jpg" class="w-3/4 sm:hidden lg:block" alt="banner img">
+                        </div>
+                    </div>
+                </section>
+                <div class="flex items-center gap-3 w-[90%] mx-auto">
+                    <a href="#about" class="flex items-center gap-3">
+                        <span
+                            class="border-2 border-[#ea8f10] w-[40px] h-[40px] flex justify-center items-center rounded-full my-5">
+                            <i class="fa-solid fa-arrow-down text-white"></i>
+                        </span>
+                        <p class="text-lg text-white">Scroll for more</p>
+                    </a>
+                </div>
+
+            </section>
+
+
+
+            <!-- about section -->
+
+            <section id="about" class="about w-[90%] mx-auto mb-10 border-t pt-10">
+                <div class="h-52 title">
+                    <img src="./image/geometric_shape (1).svg" class="md:w-[30%] lg:w-[23%] w-[60%] opacity-25 imgt "
+                        alt="">
+                    <h4 class="text-[#ea8f10] a text-xl">About</h4>
+                    <h1 class="text-white ah1 md:text-6xl text-4xl font-bold">Always focused on achieving goals, no
+                        matter
+                        the challenges.</h1>
+                </div>
+                <div class="text-white pt-20 ">
+                    <p class="text-xl my-8"> I am passionate about web design and development, dedicated to creating
+                        user-friendly and responsive
+                        websites. I combine creativity and technical skills to deliver visually appealing and functional
+                        designs. I tackle challenges with focus and determination, turning problems into solutions and
+                        striving
+                        to grow with every project.
+                    <p class="text-xl my-8">I am skilled in web design and development, creating user-friendly,
+                        responsive, and visually appealing websites. Proficient in HTML, CSS, JavaScript, and modern
+                        frameworks, I ensure seamless functionality and design.</p>
+                    <p class="text-xl my-8"> I specialize in creating user-friendly, dynamic, and responsive websites
+                        that deliver an exceptional experience. With a focus on intuitive design and seamless
+                        functionality,
+                        I ensure your site stands out while adapting flawlessly to any device. <span
+                            class="text-[#ea8f10]">Let’s work together</span> to bring your vision to life and make your
+                        online presence truly impactful!
+                    </p>
+                </div>
+
+                <div>
+                    <a href="./about.html">
+                        <button
+                            class="w-full  py-5 border border-2 text-white hover:bg-white hover:text-black  text-xl font-semibold rounded-lg"
+                            style="transition: 0.5s;">More
+                            About
+                            Me</button>
+                    </a>
+                </div>
+                <div class="text-white flex justify-center mt-5">
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://www.facebook.com/i.am.RashedAhmed01"><i
+                            class="text-2xl mr-5 fa-brands fa-square-facebook"></i></a>
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://x.com/rashedahommod0"> <i class="text-2xl mr-5 fa-brands fa-twitter"></i></a>
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://github.com/rashedahmed0"><i class="text-2xl mr-5 fa-brands fa-github"></i></a>
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://www.linkedin.com/in/rashed-ahommod-ba3502287/"><i
+                            class="text-2xl mr-5 fa-brands fa-linkedin"></i></a>
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://www.instagram.com/rashedahmed670/"> <i
+                            class="text-2xl mr-5 fa-brands fa-instagram"></i></a>
+                    <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                        href="https://wa.me/01407707709"><i class="text-2xl mr-5 fa-brands fa-whatsapp"></i></a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto mt-32 mb-24">
+        <section class="w-[90%] mx-auto">
+            <div class="  mb-5">
+
+                <h4 class="text-xl text-[#ea8f10]">Expertise</h4>
+                <h1 class="md:text-6xl text-4xl font-bold">My key areas of expertise.</h1>
+                <p class="mt-10 text-xl">I specialize in delivering high-quality solutions tailored to your needs. My
+                    focus areas include modern web design, intuitive user experiences, and efficient functionality.
+                    Whether it’s building from scratch or improving existing projects, I’m here to ensure success every
+                    step of the way.</p>
+            </div>
+            <div class="w-[100%] mx-auto py-10">
+                <!-- Expertise Section -->
+                <div class=" grid grid-cols-1 md:grid-cols-2">
+                    <!-- Expertise 1 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Dynamic User Interface Development</h2>
+                        <p class="text-[#777] text-xl">
+                            Expertise in using JavaScript to create interactive, user-friendly web pages by manipulating
+                            the DOM and updating the UI dynamically based on user actions.
+                        </p>
+                    </div>
+
+                    <!-- Expertise 2 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Responsive Web Design</h2>
+                        <p class="text-[#777] text-xl">
+                            Skilled in crafting layouts that work seamlessly across various screen sizes and devices,
+                            ensuring a consistent user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-[1200px] mx-auto py-24">
+                <div class="w-[100%] mx-auto">
+                    <div class="">
+                        <h1 class="text-5xl font-bold mb-5">Services</h1>
+                        <p class="text-left text-xl ">I offer web development services, including custom websites,
+                            responsive
+                            designs, and user-friendly web solutions. Let's create a website that works for you!</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+                        <div class="card">
+                            <div class=" flex items-start gap-1 mb-5">
+                                <span class="text-[#ea8f10] font-bold text-xl mt-1.5">01.</span>
+                                <h1 class="text-3xl font-bold">Website Design</h1>
+                            </div>
+                            <p class="text-xl"> I design and develop simple, clean websites for businesses, personal
+                                use, or
+                                blogs. My focus is on making websites easy to use and responsive, ensuring they look
+                                great on
+                                any device.</p>
+                            <ul class="">
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]">Simple Layouts: Designs that are clear
+                                    and easy to navigate.</li>
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]"> Mobile-Friendly: Websites that look
+                                    great on phones, tablets, and computers.</li>
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]"> Fast Loading: Optimized for quick and
+                                    smooth performance.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class=" flex items-start gap-1 mb-5">
+                                <span class="text-[#ea8f10] font-bold text-xl mt-1.5">02.</span>
+                                <h1 class="text-3xl font-bold">PSD to HTML Conversion</h1>
+                            </div>
+                            <p class="text-xl">Transform your PSD designs into fully functional HTML pages. I take your
+                                static
+                                designs and convert them into responsive, cross-browser compatible websites</p>
+                            <ul class="">
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]"> Pixel-Perfect Conversion: Ensuring
+                                    your website matches the PSD design exactly.</li>
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]">Clean Code: Writing organized and
+                                    well-structured HTML and CSS.</li>
+                                <li class="text-xl mt-3 border-t p-2 text-[#333]"> Cross-Browser Compatibility: Making
+                                    sure the website looks great on all major browsers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <a href="./service.html">
+                    <button
+                        class="w-full py-5 mt-10 border-black border-2 text-xl font-semibold rounded-lg hover:bg-black hover:text-white"
+                        style="transition: 0.5s;">
+                        View All Services
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- here clint and brand and testimonial section are commented -->
+    <!-- <div class="bg-[#fef6e6] pb-20">
+
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <div class="  mb-5">
+                    <h4 class="text-xl text-[#ea8f10]">Clients</h4>
+                    <h1 class="md:text-6xl text-4xl font-bold">I have had the privilege of working with these incredible
+                        brands.</h1>
+                    <p class="mt-10 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam, at
+                        incidunt
+                        corrupti
+                        in, dolorem saepe doloribus consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo
+                        molestias enim quibusdam, iste deleniti et dolore minima esse nobis tenetur?</p>
+                </div>
+            </div>
+            <section class="w-[90%] mx-auto pt-10">
+                <div class=" flex justify-center flex-wrap ">
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (1).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (2).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (3).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (4).svg" alt="">
+                    </div>
+                </div>
+                <div class=" flex justify-center  flex-wrap">
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (5).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (6).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (7).svg" alt="">
+                    </div>
+                    <div class="w-[200px] border-2 border-black">
+                        <img src="./image/clients/brand (8).svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="max-w-[1200px] mx-auto">
+            <section class="w-[90%] mx-auto">
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-01.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">jonh doe</h1>
+                                    <p class="text-[#777]">ceo of facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item2" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl "> elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-02.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">William</h1>
+                                    <p class="text-[#777]">ceo of paypal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item3" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-03.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">Oliver</h1>
+                                    <p class="text-[#777]">ceo of google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item4" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-04.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">henry</h1>
+                                    <p class="text-[#777]">ceo of youtube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div> -->
+    <!-- here finish the comment  -->
+
+
+    <div class="bg-[#212722] pb-20">
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <div class="text-center">
+                    <h1 class="md:text-5xl text-4xl lg:text-6xl text-white font-bold my-10">Get Your Website Today</h1>
+                    <p class="text-xl text-white  my-10">Ready to take your online presence to the next level? Whether
+                        you need a brand-new website, a redesign, or custom features, I’m here to help you make it
+                        happen. With personalized web development solutions, I ensure your project is tailored to your
+                        needs. <a class="text-[#ea8f10]" href="./contact.html">Let’s get started</a> today and
+                        turn your ideas into a
+                        fully functional website!
+
+                    </p>
+                    <div
+                        class=" lg:w-[30%] w-[90%] bg-[#ea8f10] hover:bg-[#fcaa37]  rounded-lg  px-6  py-3 mx-auto  text-xl text-center font-semibold">
+                        <a class="" href="./contact.html">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#181818] pb-20">
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <!-- here commnet blog section -->
+                <!--                 
+                <div class="text-center">
+                    <p class="text-2xl text-[#ea8f10]   my-10">
+                        Recent Articles
+                    </p>
+                    <h1 class="md:text-5xl text-4xl lg:text-6xl text-white font-bold my-10"> Latest articles from my
+                        blog.</h1>
+
+                </div>
+                <div class="pt-20 flex flex-wrap justify-between">
+                    <div class="contect-blog1 w-full lg:w-[50%] pb-10">
+                        <h4 class="text-[#ea8f10] text-2xl pb-5 ">Sponsored</h4>
+                        <h1 class="text-4xl font-bold pb-5 text-[#999]">Need Web Hosting for Your Websites?
+                        </h1>
+                        <p class="text-xl text-[#777]">
+                            Need hosting for your website? We would highly recommend DreamHost. Enjoy 100% in-house
+                            support, guaranteed performance and uptime, 1-click installs, and a super-intuitive control
+                            panel to make managing your websites and projects easy. Sign up now to get started.
+                        </p>
+
+                    </div>
+                    <div class="contect-blog1 w-full lg:w-[50%] pb-10">
+                        <h4 class="text-[#ea8f10] text-2xl pb-5 ">Productivity</h4>
+                        <h1 class="text-4xl font-bold pb-5 text-[#999]">5 Marketing Productivity Apps for Your Team
+                        </h1>
+                        <p class="text-xl text-[#777]">
+                            Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Aut
+                            asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit
+                            eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim
+                            suscipit.
+                        </p>
+
+                    </div>
+                    <div class="contect-blog1 w-full lg:w-[50%] pb-10 ">
+                        <h4 class="text-[#ea8f10] text-2xl pb-5 ">Sponsored</h4>
+                        <h1 class="text-4xl font-bold pb-5 text-[#999]">Need Web Hosting for Your Websites?
+                        </h1>
+                        <p class="text-xl text-[#777]">
+                            Need hosting for your website? We would highly recommend DreamHost. Enjoy 100% in-house
+                            support, guaranteed performance and uptime, 1-click installs, and a super-intuitive control
+                            panel to make managing your websites and projects easy. Sign up now to get started.
+                        </p>
+
+                    </div>
+                    <div class="contect-blog1 w-full lg:w-[50%] pb-10">
+                        <h4 class="text-[#ea8f10] text-2xl pb-5 ">SEO</h4>
+                        <h1 class="text-4xl font-bold pb-5 text-[#999]">7 SEO Factors to Consider for Better Website
+                            Ranking
+                        </h1>
+                        <p class="text-xl text-[#777]">
+                            Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut
+                            asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit
+                            eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim
+                            suscipit.
+                        </p>
+
+                    </div>
+                </div> -->
+
+                <footer class="lg:flex lg:justify-between border-t">
+                    <div class="w-full lg:w-[45%] my-10">
+                        <h1 class="text-white text-3xl font-bold pb-5">Rashed.</h1>
+                        <p class="text-xl text-[#999] leading-8">A motivated Front-End Web Developer skilled in HTML,
+                            CSS, JavaScript, React, and responsive design with frameworks like Bootstrap and Tailwind
+                            CSS. Experienced in creating responsive websites and solving problems</p>
+                    </div>
+                    <div class="w-full lg:w-[15%] my-10">
+                        <h1 class="text-3xl font-bold text-white pb-5">Site Links</h1>
+                        <ul>
+                            <li class="text-xl text-[#999] mb-3"><a href="./index.html">Home</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./about.html">About</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./service.html">Services</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./error.html">Journal</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[30%] my-10">
+                        <h1 class="text-3xl text-white font-bold pb-5">Newsletter</h1>
+                        <p class="text-xl text-[#999] pb-5">Get the latest news and updates straight to your inbox. Stay
+                            connected with me</p>
+                        <div class="">
+                            <input
+                                class="w-full py-3 pl-[30%] md:pl-[40%] lg:pl-[30%] text-white bg-[#242525] pb-5 rounded-lg mb-5"
+                                type="text" placeholder="Your Email Address">
+                            <div
+                                class=" w-full hover:bg-[#fcaa37] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-xl text-center font-semibold">
+                                <a class="">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="flex  md:justify-between flex-col md:flex-row ">
+                    <div class="text-white flex justify-center mt-5">
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.facebook.com/i.am.RashedAhmed01"><i
+                                class="text-2xl mr-5 fa-brands fa-square-facebook"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://x.com/rashedahommod0"> <i class="text-2xl mr-5 fa-brands fa-twitter"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://github.com/rashedahmed0"><i class="text-2xl mr-5 fa-brands fa-github"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.linkedin.com/in/rashed-ahommod-ba3502287/"><i
+                                class="text-2xl mr-5 fa-brands fa-linkedin"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.instagram.com/rashedahmed670/"> <i
+                                class="text-2xl mr-5 fa-brands fa-instagram"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://wa.me/01407707709"><i class="text-2xl mr-5 fa-brands fa-whatsapp"></i></a>
+
+
+
+
+                    </div>
+
+                    <div class="">
+                        <div class="flex justify-center text-white border-t mt-3 pt-3 ">
+                            <p>@ copyright Rashed 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

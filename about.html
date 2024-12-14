@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashed.</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* .header {
+            background-color: #212722;
+        } */
+
+        .lg-li-color li {
+            color: hsla(127, 8%, 55%, 1);
+        }
+
+        .lg-li-color li:hover {
+            color: white;
+        }
+
+        .lets-btn {
+            background-color: #ea8f10;
+            padding: 1.6rem 3.6rem;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .bg-btn-lets {}
+
+        .img {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .bgc::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #3f2705;
+            position: absolute;
+            bottom: 10px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc2::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #9c5f09;
+            position: absolute;
+            bottom: 25px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc3::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #895104;
+            position: absolute;
+            bottom: 40px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc4::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #5e3a07;
+            bottom: 55px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc5::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #603b07;
+            bottom: 70px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .rashed {
+
+            position: relative;
+        }
+
+
+        .rashed::before {
+            content: "";
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #e48b0e;
+            bottom: 12px;
+            left: -51%;
+
+        }
+
+
+
+        .title {
+            position: relative;
+        }
+
+        .a {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            font-size: 20px;
+        }
+
+        .ah1 {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            font-size: 20px;
+        }
+
+        /* General styles */
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        .skills-container {
+            width: 100%;
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+
+        .skill {
+            margin: 20px 0;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        .html {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: htmlSkill;
+        }
+
+        .css {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: cssSkill;
+        }
+
+        .js {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: jsSkill;
+        }
+
+        .bootstrap {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: bootstrapSkill;
+        }
+
+        .tailwind {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: tailwindSkill;
+        }
+
+        /* Animation keyframes */
+        @keyframes htmlSkill {
+            to {
+                width: 90%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes cssSkill {
+            to {
+                width: 80%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes jsSkill {
+            to {
+                width: 70%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes bootstrapSkill {
+            to {
+                width: 75%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes tailwindSkill {
+            to {
+                width: 85%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        .exparties:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    </style>
+</head>
+
+<body class=" ">
+
+    <div class="bg-[#212722]">
+        <div class="max-w-[1200px] mx-auto pb-10">
+            <section class="header pb-10">
+                <div class="navbar w-[90%] mx-auto  flex justify-between">
+                    <div class="w-full">
+
+                        <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
+                            <div class="dropdown flex justify-end">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./service.html">Services</a></li>
+                                    <li><a href="./error.html">Journal</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+
+                                    <div
+                                        class="  lg:hidden w-[90%] bg-[#ea8f10] hover:bg-[#fcaa37] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
+                                        <a class="" href="./contact.html">Let's Work Together</a>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 lg-li-color">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./service.html">Services</a></li>
+                                <li><a href="./error.html">Journal</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="navbar-end hidden lg:flex">
+                        <a class="lets-btn bg-[] hover:bg-[#fcaa37]" href="./contact.html">Let's Work Together</a>
+                    </div>
+                </div>
+                <section class="banner w-[90%] mx-auto pt-20 pb-5">
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <div class="text text-white basis-[100%] text-center">
+                            <div class="">
+                                <h3 class="text-xl text-[#ea8f10]">About</h3>
+                            </div>
+                            <h1 class="text-5xl font-bold py-9">
+                                Hi, I'm Rashed
+                            </h1>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="max-w-[1200px] mx-auto py-24">
+        <div class="w-[90%] mx-auto">
+            <h1 class="text-3xl md:text-5xl  font-bold py-9 text-center"> Always focused on achieving goals, no matter
+                the challenges.</h1>
+            <p class="text-xl text-[#777] ">
+                I am passionate about web design and development, dedicated to creating user-friendly and responsive
+                websites. I combine creativity and technical skills to deliver visually appealing and functional
+                designs. I tackle challenges with focus and determination, turning problems into solutions and striving
+                to grow with every project.</p>
+        </div>
+        <div class="flex justify-center w-[90%] mx-auto">
+            <img class="w-[]" src="./image/about.jpg" alt="">
+        </div>
+
+        <div class="w-[90%] mx-auto mb-10">
+            <div class="">
+                <h3 class="text-3xl font-bold text-[#333] rashed mb-5">My Education </h3>
+                <span class="rashed-bg"></span>
+
+            </div>
+            <div class="pl-5 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="border-r-2 border-[#ea8f10] pr-3">
+                    <h1 class="text-2xl text-[#333] font-semibold my-3">Bachelor’s in Computer Science and Engineering
+                    </h1>
+                    <h2 class="text-xl text-[#777] my-2">National University <span
+                            class="border-l-2 pl-1 text-lg font-semibold">2020-2021</span>
+                    </h2>
+                    <p class="text-[#777]">Bachelor’s in Computer Science and Engineering from National University
+                        (2020-2021).
+                    </p>
+                </div>
+                <div class="border-r-2 border-[#ea8f10] pr-3">
+                    <h1 class="text-2xl text-[#333] font-semibold my-3">Alim /Higher Secondary Certificate (HSC)
+                    </h1>
+                    <h2 class="text-xl text-[#777] my-2">Jamea Quasemia Kamil Madrasah <span
+                            class="border-l-2 pl-1 text-lg font-semibold">2018-19</span>
+                    </h2>
+                    <p class="text-[#777]">Alim (Higher Secondary Certificate - HSC) from Jamea Quasemia Kamil Madrasah
+                        (2018-19). Completed studies in general subjects along with Islamic education.
+                    </p>
+                </div>
+                <div class="border-r-2 border-[#ea8f10] pr-3">
+                    <h1 class="text-2xl text-[#333] font-semibold my-3">Dakhil /Secondary School Certificate(SSC)
+                    </h1>
+                    <h2 class="text-xl text-[#777] my-2">Jamea Quasemia Kamil Madrasah <span
+                            class="border-l-2 pl-1 text-lg font-semibold">2016-17</span>
+                    </h2>
+                    <p class="text-[#777]">
+                        Dakhil (Secondary School Certificate - SSC) from Jamea Quasemia Kamil Madrasah (2016-17).
+                        Completed studies in general subjects along with Islamic education.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w-[90%] mx-auto">
+            <div class="">
+                <h3 class="text-3xl font-bold text-[#333] rashed">Skills </h3>
+                <p class="text-xl text-[#777] my-5">I am skilled in web design and development, creating user-friendly,
+                    responsive, and visually appealing websites. Proficient in HTML, CSS, JavaScript, and modern
+                    frameworks, I ensure seamless functionality and design.</p>
+                <span class="rashed-bg"></span>
+
+            </div>
+            <div class="skills-container">
+                <div class="skill ">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            HTML
+
+                        </p>
+                        <div class="percentage text-[#999]">90%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            CSS
+
+                        </p>
+                        <div class="percentage text-[#999]">80%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            JavaScript
+
+                        </p>
+                        <div class="percentage text-[#999]">70%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level js"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            Bootstrap
+
+                        </p>
+                        <div class="percentage text-[#999]">75%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bootstrap"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            Tailwind CSS
+
+                        </p>
+                        <div class="percentage text-[#999]">85%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level tailwind"></div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-[40%] hover:bg-[#fcaa37] bg-[#ea8f10] rounded-lg  px-6  py-3 text-center  text-md font-semibold ">
+                    <a class="text-[#333]">More Skill</a>
+                </div>
+            </div>
+            <div class="w-[100%] mx-auto py-10 mt-10">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-bold text-gray-800">My Web Design Expertise</h1>
+                </div>
+
+                <!-- Expertise Section -->
+                <div class=" grid grid-cols-1 md:grid-cols-2">
+                    <!-- Expertise 1 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Dynamic User Interface Development</h2>
+                        <p class="text-[#777] text-xl">
+                            Expertise in using JavaScript to create interactive, user-friendly web pages by manipulating
+                            the DOM and updating the UI dynamically based on user actions.
+                        </p>
+                    </div>
+
+                    <!-- Expertise 2 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Responsive Web Design</h2>
+                        <p class="text-[#777] text-xl">
+                            Skilled in crafting layouts that work seamlessly across various screen sizes and devices,
+                            ensuring a consistent user experience.
+                        </p>
+                    </div>
+
+                    <!-- Expertise 3 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">HTML & CSS Proficiency</h2>
+                        <p class="text-[#777] text-xl">
+                            Strong foundation in structuring web content with HTML and styling it effectively using CSS,
+                            including basic animations and layout techniques like Flexbox and Grid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[100%] mt-10">
+                <h1 class="text-3xl font-semibold mb-2">Why Work With Me</h1>
+                <p class="text-xl text-[#777]"> I specialize in creating user-friendly, dynamic, and responsive websites
+                    that deliver an exceptional experience. With a focus on intuitive design and seamless functionality,
+                    I ensure your site stands out while adapting flawlessly to any device. <span
+                        class="text-[#ea8f10]">Let’s work together</span> to bring your vision to life and make your
+                    online presence truly impactful!!</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- testimonial section is commented -->
+    <!-- <div class="bg-[#fef6e6] pb-20">
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <div class=" text-center">
+                    <h4 class="text-xl text-[#ea8f10]">Testimonials</h4>
+                    <h1 class="md:text-4xl text-3xl font-bold">Reviews From Real Clients</h1>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1200px] mx-auto">
+            <section class="w-[90%] mx-auto">
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-[100%] md:w-[50%] mx-5">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-01.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">jonh doe</h1>
+                                    <p class="text-[#777]">ceo of facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item2" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl "> elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-02.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">William</h1>
+                                    <p class="text-[#777]">ceo of paypal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item3" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-03.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">Oliver</h1>
+                                    <p class="text-[#777]">ceo of google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item4" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-04.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">henry</h1>
+                                    <p class="text-[#777]">ceo of youtube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div> -->
+
+    <div class="bg-[#181818] pb-20">
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <footer class="lg:flex lg:justify-between border-t">
+                    <div class="w-full lg:w-[45%] my-10">
+                        <h1 class="text-white text-3xl font-bold pb-5">Rashed.</h1>
+                        <p class="text-xl text-[#999] leading-8">A motivated Front-End Web Developer skilled in HTML,
+                            CSS, JavaScript, React, and responsive design with frameworks like Bootstrap and Tailwind
+                            CSS. Experienced in creating responsive websites and solving problems</p>
+                    </div>
+                    <div class="w-full lg:w-[15%] my-10">
+                        <h1 class="text-3xl font-bold text-white pb-5">Site Links</h1>
+                        <ul>
+                            <li class="text-xl text-[#999] mb-3"><a href="./index.html">Home</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./about.html">About</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./service.html">Services</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./error.html">Journal</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[30%] my-10">
+                        <h1 class="text-3xl text-white font-bold pb-5">Newsletter</h1>
+                        <p class="text-xl text-[#999] pb-5">Get the latest news and updates straight to your inbox. Stay
+                            connected with me</p>
+                        <div class="">
+                            <input
+                                class="w-full py-3 pl-[30%] md:pl-[40%] lg:pl-[30%] text-white bg-[#242525] pb-5 rounded-lg mb-5"
+                                type="text" placeholder="Your Email Address">
+                            <div
+                                class=" w-full hover:bg-[#fcaa37] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-xl text-center font-semibold">
+                                <a class="">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="flex  md:justify-between flex-col md:flex-row ">
+                    <div class="text-white flex justify-center mt-5">
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.facebook.com/i.am.RashedAhmed01"><i
+                                class="text-2xl mr-5 fa-brands fa-square-facebook"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://x.com/rashedahommod0"> <i class="text-2xl mr-5 fa-brands fa-twitter"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://github.com/rashedahmed0"><i class="text-2xl mr-5 fa-brands fa-github"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.linkedin.com/in/rashed-ahommod-ba3502287/"><i
+                                class="text-2xl mr-5 fa-brands fa-linkedin"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://www.instagram.com/rashedahmed670/"> <i
+                                class="text-2xl mr-5 fa-brands fa-instagram"></i></a>
+                        <a style="transition: 0.5s;" class="hover:text-[#fcaa37] " target="_blank"
+                            href="https://wa.me/01407707709"><i class="text-2xl mr-5 fa-brands fa-whatsapp"></i></a>
+
+
+
+
+                    </div>
+
+                    <div class="">
+                        <div class="flex justify-center text-white border-t mt-3 pt-3 ">
+                            <p>@ copyright Rashed 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
